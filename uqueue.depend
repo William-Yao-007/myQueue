@@ -1,6 +1,10 @@
 # depslib dependency file v1.0
-1719370013 source:c:\william\09_research\github\myqueue\src\main.c
+1719387649 source:c:\william\09_research\github\myqueue\src\main.c
 	<stdio.h>
+	"queue.h"
 
-1719369782 source:c:\william\09_research\github\myqueue\src\queue.c
+1719380734 source:c:\william\09_research\github\myqueue\src\queue.c
+	"queue.h"
+
+1719380710 c:\william\09_research\github\myqueue\src\queue.h
 
