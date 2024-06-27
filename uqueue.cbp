@@ -38,6 +38,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/queue.h" />
+		<Unit filename="src/uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/uart.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
