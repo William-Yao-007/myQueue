@@ -55,7 +55,14 @@ short uart_pull_data(UART_DATA_T *uart_data, char *byte_array, unsigned short by
     short i = 0;
 
     for(i = 0; i < byte_length; i++) {
-        if(dequeue(uart_data->uart_queue, &byte_array[i]) < 0) return -2;       // buffer is empty
+        if(dequeue(uart_data->uart_queue, &byte_array[i]) < 0) {
+            if(0xFFFF != byte_length) {
+                return -2;       // buffer is empty
+            }
+            else {
+                break;
+            }   
+        }
     }
 
     return i;
